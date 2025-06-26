@@ -23,8 +23,8 @@ public class Main {
         String[] arrayFilter = FilterByCharacter(arrayFromCollection,"y").toArray(new String[0]);
 
         //Reverso del arreglo de strings
-        arrayYFilter = ReverseArrayString(arrayYFilter);
-        arrayFilter = ReverseArrayString(arrayFilter);
+        String[] arrayYFilterOrder = ReverseArrayString(arrayYFilter);
+        String[] arrayFilterOrder = ReverseArrayString(arrayFilter);
 
         //Reverso de los strings
         String[] arrayYOrder = ReverseString(arrayYFilter);
@@ -36,11 +36,21 @@ public class Main {
         }
         System.out.println("-----");
         System.out.println("Arreglo sin la letra y");
-        for(String list : arrayYFilter){
+        for(String list : arrayYFilterOrder){
             System.out.println(list);
         }
         System.out.println("-----");
         System.out.println("Arreglo con la letra y");
+        for(String list : arrayFilterOrder){
+            System.out.println(list);
+        }
+        System.out.println("-----");
+        System.out.println("Lista de arreglo al revés sin la letra y");
+        for(String list : arrayYFilter){
+            System.out.println(list);
+        }
+        System.out.println("-----");
+        System.out.println("Lista de arreglo al revés con la letra y");
         for(String list : arrayFilter){
             System.out.println(list);
         }
